@@ -1,0 +1,87 @@
+### Create customer
+POST localhost:3000/customer?first_name=John&last_name=Doe&phone=123456
+
+### Create user
+POST localhost:3000/user?email=john@doe.com&password=john_doe_pass&customer_id=1&role=admin
+
+### Login
+POST localhost:3000/login?email=john@doe.com&password=john_doe_pass
+
+### Get user
+GET localhost:3000/user/1
+
+### Update user
+PUT localhost:3000/user/1?email=john@doe.com&password=john_doe_pass&customer_id=1&role=admin
+
+### Get logged user
+GET localhost:3000/logged_user
+
+### Get customer
+GET localhost:3000/customer/1
+
+### Update customer
+PUT localhost:3000/customer/1?first_name=John&last_name=Doe&phone=123456
+
+### Create service
+POST localhost:3000/service?name=Service1&description=Service1Description&price=1.02&customer_id=1
+
+### Get service
+GET localhost:3000/service/1
+
+### Update service
+PUT localhost:3000/service/1?name=Service1&description=Service1Description&price=1.02&customer_id=1
+
+### Delete service
+DELETE localhost:3000/service/1
+
+### Delete customer
+DELETE localhost:3000/customer/1
+
+### Delete user
+DELETE localhost:3000/user/1
+
+
+
+
+
+### Create second customer
+POST localhost:3000/customer?first_name=John&last_name=Doe&phone=123456789
+
+### Create second user
+POST localhost:3000/user?email=john2@doe2.com&password=john_doe_pass&customer_id=2
+
+### Second login
+POST localhost:3000/login?email=john2@doe2.com&password=john_doe_pass
+
+### Get second user
+GET localhost:3000/user/2
+
+### Update second user
+PUT localhost:3000/user/2?email=john2@doe2.com&password=john_doe_pass&customer_id=2
+
+### Get logged user
+GET localhost:3000/logged_user
+
+### Get second customer
+GET localhost:3000/customer/2
+
+### Update second customer
+PUT localhost:3000/customer/2?first_name=John&last_name=Doe&phone=123456789
+
+### Create second service
+POST localhost:3000/service?name=Service2&description=Service2Description&price=2.02&customer_id=2
+
+### Get second service
+GET localhost:3000/service/2
+
+### Update second service
+PUT localhost:3000/service/2?name=Service2&description=Service2Description&price=2.02&customer_id=2
+
+### Delete second service
+DELETE localhost:3000/service/2
+
+### Delete second customer
+//DELETE localhost:3000/customer/2
+
+### Delete second user
+//DELETE localhost:3000/user/2
